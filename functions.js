@@ -35,4 +35,10 @@ function sortByEmail (arr) {
     })
 }
 
-//function 3: 
+//function 3: using map
+function squareStuff(arr) {
+    return arr.map(function(num){
+        return num * num
+    });
+}
+
