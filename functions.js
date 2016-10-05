@@ -51,3 +51,43 @@ function squareObjNum (arr) {
     })
 }
 
+//function 5: operationMaker
+function operationMaker (operation) {
+  
+  var output;
+  
+  switch(operation) {
+    case 'add':
+      output = function (num1,  num2) {
+        return num1 + num2;
+      };
+      break; 
+    case 'substract':
+      output = function (num1, num2) {
+        return num1 - num2;
+      };
+      break;          
+    case 'mult':
+      output = function (num1, num2) {
+        return num1 * num2;
+      };
+    break;           
+    case 'div':
+      output = function (num1, num2) {
+        return num1 / num2;
+      };
+    break;
+    default:
+    output = "HELLO"
+  }
+    
+  return output;
+}
+
+var adder = operationMaker("add"); 
+
+var sum = adder(5, 10);
+
+console.log(sum);
+
+
