@@ -35,10 +35,19 @@ function sortByEmail (arr) {
     })
 }
 
-//function 3: using map
+//function 3: using map return square
 function squareStuff(arr) {
     return arr.map(function(num){
         return num * num
     });
+}
+
+//function 4: using map to square the 'num' properties of an object
+var arrTest = [{name: 'number1', num: 4}, {name: 'number2', num: 7}, {name: 'number3', num: 3}];
+
+function squareObjNum (arr) {
+    return arr.map(function(a) {
+        return a.num * a.num;
+    })
 }
 
