@@ -33,18 +33,19 @@ function Map (width, height) {
     }
     return this.Map;
 }
+var myMap = new Map(4,7);
 
-Map.prototype.getWalkableOutput = function() {
-    var tileInMap = "";
-    for (var i = 0; i < this.tiles.length; i++) {
-        if (this.tiles[i].type.walkable() === 'true' ) {
-            tileInMap = 'O';
-        } else {
-            tileInMap = 'X';
-        }
-    }
-    return this.Map;
-};
+console.log(myMap);
 
-// Map.prototype.getAsciiOutput = function () {};
+// Map.prototype.getWalkableOutput = function() {
+//     var tilesinMap = this.Map.tiles;
+//     for (var i = 0; i < this.tiles.length; i++) {
+//         if (this.tiles[i].type.walkable() === 'true' ) {
+//             tileInMap = 'O';
+//         } else {
+//             tileInMap = 'X';
+//         }
+//     }
+//     return this.Map;
+// };
 
